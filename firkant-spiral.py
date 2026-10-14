@@ -2,10 +2,11 @@ import turtle
 import math
 
 t = turtle.Turtle()
-farger = ["red", "yellow", "green", "blue"]
+farger = ["grey", "blue", "grey", "blue"]
 side = 10
 angel = 0
-for teller in range(1, 40):
+turtle.speed(1000)
+for turn in range(1, 40):
     hypotenus = math.sqrt(side**2 + side**2)
     t.penup()
     t.home()

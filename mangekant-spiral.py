@@ -43,14 +43,12 @@ startverdi = True
 fargeliste = []
 while startverdi:
     farge = input("Skriv inn en farge: ")
-    print(type(farge))
     try:
         farge = float(farge)
+        mangekant_spiral(fargeliste)
         startverdi = False
     except ValueError:
         fargeliste.append(farge)
         startverdi = True
 
-mangekant_spiral(fargeliste)
-        
 
